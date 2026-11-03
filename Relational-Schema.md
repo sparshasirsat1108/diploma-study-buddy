@@ -1,0 +1,15 @@
+# Relational Schema
+
+USER(**user_id**, name, email, password, role, branch_id FK, semester FK)
+BRANCH(**branch_id**, name, short_name, icon)
+SEMESTER(**semester_id**, number)
+SUBJECT(**subject_id**, branch_id FK, semester FK, code, name, icon, color)
+CHAPTER(**chapter_id**, subject_id FK, chapter_no, title)
+NOTE(**note_id**, subject_id FK, title, file_name, file_url, uploaded_at)
+VIDEO(**video_id**, subject_id FK, title, video_url)
+QUIZ(**quiz_id**, subject_id FK, title)
+QUESTION(**question_id**, quiz_id FK, question, option_a, option_b, option_c, option_d, correct_option, marks)
+PROGRESS(**progress_id**, user_id FK, subject_id FK, chapter_id FK, completed, quiz_score, last_accessed)
+DOUBT(**doubt_id**, user_id FK, subject_id FK, question, answer, status, created_at)
+FEEDBACK(**feedback_id**, user_id FK, rating, comment, created_at)
+NOTIFICATION(**notification_id**, user_id FK, title, message, is_read, created_at)
