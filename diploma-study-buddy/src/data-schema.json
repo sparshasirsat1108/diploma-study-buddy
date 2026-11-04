@@ -1,0 +1,32 @@
+{
+  "collections": [
+    "users",
+    "branches",
+    "semesters",
+    "subjects",
+    "chapters",
+    "notes",
+    "videos",
+    "quizzes",
+    "questions",
+    "progress",
+    "doubts",
+    "feedback",
+    "notifications"
+  ],
+  "exampleBranch": {
+    "id": "computer",
+    "name": "Computer Engineering",
+    "short": "CO"
+  },
+  "exampleSemester": {
+    "number": 1,
+    "branchId": "computer"
+  },
+  "exampleSubject": {
+    "code": "CP",
+    "name": "C Programming",
+    "semester": 1,
+    "branchId": "computer"
+  }
+}
